@@ -1,4 +1,7 @@
 .container
+  - if flash.any?
+    - flash.keys.each do |key|
+      = flash[key]
   = form_tag user_session_path, method: :post, class: "form-signin" do
     %h1.center.header-big iWod
     = link_to "Register your Gym for FREE", new_user_registration_path, class: "btn btn-lg btn-success btn-block"
