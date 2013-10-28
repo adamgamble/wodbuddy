@@ -1,0 +1,11 @@
+.container
+  %h1.center.header-big= current_user.gym.name
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+.container
+  = link_to "Logout", destroy_user_session_path, method: :delete, class: "btn btn-lg btn-danger btn-block"

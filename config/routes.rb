@@ -1,4 +1,8 @@
 Iwod::Application.routes.draw do
   devise_for :users
-  root :to => "home#index"
+  root :to => "pages#index"
+
+  get "/home" => "pages#user_home"
+
+  resources :gyms
 end

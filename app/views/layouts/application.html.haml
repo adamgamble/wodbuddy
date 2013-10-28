@@ -9,4 +9,8 @@
     = csrf_meta_tags
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
   %body
+    .container
+      - if flash.any?
+        - flash.keys.each do |key|
+          = flash[key]
     = yield
