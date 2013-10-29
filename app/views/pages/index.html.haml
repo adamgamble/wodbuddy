@@ -5,8 +5,8 @@
     %br/
     %br/
     %h2.form-signin-heading Please sign in
-    %input.form-control{:autofocus => "", :placeholder => "Email address", :type => "text"}/
-    %input.form-control{:placeholder => "Password", :type => "password"}/
+    %input.form-control{:name => "user[email]", :autofocus => "", :placeholder => "Email address", :type => "text"}/
+    %input.form-control{:name => "user[password]", :placeholder => "Password", :type => "password"}/
     %label.checkbox
       %input{:type => "checkbox", :value => "remember-me"}/
       Remember me
