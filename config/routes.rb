@@ -5,4 +5,5 @@ Iwod::Application.routes.draw do
   get "/home" => "pages#user_home"
 
   resources :gyms
+  resources :wods
 end

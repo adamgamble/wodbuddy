@@ -65,9 +65,8 @@ body {
   border-top-right-radius: 0;
 }
 
-#wod_editor {
+.wod-editor {
   width: 100%;
-  height: 300px;
   background-color: #fff;
   overflow:scroll; 
   max-height:300px;

@@ -6,6 +6,7 @@ class PagesController < ApplicationController
   end
 
   def user_home
+    @wod = Wod.new
   end
 
   private
