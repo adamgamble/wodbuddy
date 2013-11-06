@@ -1,4 +1,8 @@
 class GymsController < ApplicationController
+  def index
+    @gyms = current_user.gyms
+  end
+
   def new
     @gym = Gym.new
   end
@@ -6,7 +10,7 @@ class GymsController < ApplicationController
   def create
     @gym = Gym.new(gym_params)
     if @gym.save
-      current_user.update_attribute(:gym_id, @gym.id)
+      current_user.gyms << @gym
       redirect_to home_path, notice: "Gym Created!"
     else
       render action: :new, error: "There were some problems with your input"

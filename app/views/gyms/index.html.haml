@@ -1,0 +1,12 @@
+%h1 Your Gyms
+
+= link_to "New Gym", new_gym_path, class: "btn btn-primary"
+%br/
+%br/
+%table.table
+  %tr
+    %th Gym Name
+  - @gyms.each do |gym|
+    %tr
+      %td=gym.name
+

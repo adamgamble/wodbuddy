@@ -1,6 +1,7 @@
 require 'securerandom'
 class Gym < ActiveRecord::Base
-  has_many :users
+  has_many :user_join_gyms
+  has_many :users, :through => :user_join_gyms
   has_many :wods
 
   before_create :create_code

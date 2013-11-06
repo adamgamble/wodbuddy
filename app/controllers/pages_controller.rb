@@ -11,6 +11,6 @@ class PagesController < ApplicationController
 
   private
   def handle_gym_creation
-    redirect_to new_gym_path unless current_user.gym
+    redirect_to new_gym_path unless current_user.gyms.any?
   end
 end

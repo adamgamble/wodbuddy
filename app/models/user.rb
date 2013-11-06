@@ -4,5 +4,6 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  belongs_to :gym
+  has_many :user_join_gyms
+  has_many :gyms, :through => :user_join_gyms
 end
