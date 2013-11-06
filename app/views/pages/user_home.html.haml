@@ -1,6 +1,7 @@
 .container
   .well
     %h1.center.header-big= current_user.gym.name
+    = link_to "Daily Wod", wods_by_code_path(current_user.gym.code)
     %hr/
     = form_for @wod do |f|
       = f.label :name

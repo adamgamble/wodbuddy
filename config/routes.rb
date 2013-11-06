@@ -7,5 +7,5 @@ Iwod::Application.routes.draw do
   resources :gyms
   resources :wods
 
-  get 'gym_wod/:code' => "wods#by_code"
+  get 'gym_wod/:code' => "wods#by_code", as: "wods_by_code"
 end
