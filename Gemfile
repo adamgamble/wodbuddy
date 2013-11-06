@@ -10,9 +10,12 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 1.2'
 gem 'haml-rails'
 gem 'erb2haml'
+gem 'capistrano', '~> 2'
 
 group :doc do
   gem 'sdoc', require: false
 end
 
 gem 'rails_12factor', group: :production
+gem 'rvm-capistrano'
+gem 'unicorn'
