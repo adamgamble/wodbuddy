@@ -1,7 +1,0 @@
-development:
-  adapter: postgresql
-  database: iwod_dev
-
-test:
-  adapter: postgresql
-  database: iwod_test
