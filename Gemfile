@@ -11,6 +11,7 @@ gem 'jbuilder', '~> 1.2'
 gem 'haml-rails'
 gem 'erb2haml'
 gem 'capistrano', '~> 2'
+gem 'pdfkit'
 
 group :doc do
   gem 'sdoc', require: false
