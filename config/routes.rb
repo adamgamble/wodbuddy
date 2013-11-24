@@ -4,7 +4,11 @@ Iwod::Application.routes.draw do
 
   get "/home" => "pages#user_home"
 
-  resources :gyms
+  resources :gyms do
+    member do
+      get :poster
+    end
+  end
   resources :wods
 
   get 'gym_wod/:code' => "wods#by_code", as: "wods_by_code"

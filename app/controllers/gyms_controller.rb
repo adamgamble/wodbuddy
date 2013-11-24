@@ -17,6 +17,11 @@ class GymsController < ApplicationController
     end
   end
 
+  def poster
+    @gym = current_user.gyms.first
+    render :layout => false
+  end
+
   private
   def gym_params
     params.require(:gym).permit(:name, :location)
